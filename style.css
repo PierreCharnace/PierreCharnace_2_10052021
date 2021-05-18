@@ -1,10 +1,19 @@
 
-article{
+#activities_content{
     display: flex;
+    flex-wrap: wrap;
 }
+
 
 .activities{
     display: flex;
+    height: 10em;
+    width: 10em;
+
+}
+.dual_photo{
+
+}
+figcaption{
     
-    height: 120px;
 }
