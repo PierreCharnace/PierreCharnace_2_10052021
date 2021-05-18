@@ -1,0 +1,10 @@
+
+article{
+    display: flex;
+}
+
+.activities{
+    display: flex;
+    
+    height: 120px;
+}
