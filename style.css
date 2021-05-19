@@ -1,15 +1,19 @@
 body{
+    margin-top: 0em;
+}
+
+#block_page{
     font-family: 'Raleway', sans-serif ;
 }
 
 header{
     display: flex;
-    padding: 2.8em;
     justify-content: space-between;
 }
 
 #logo{
     width: 20%;
+    padding: 2.8em;
 }
 
 nav{
@@ -17,3 +21,21 @@ nav{
     justify-content: space-between;
     width: 28%;
 }
+
+.nav_bar{
+    text-decoration: none;
+    padding: 2.8em 2em;
+    color: black;
+}
+
+.nav_bar:hover{
+    border-top: #0065FC solid;
+    color: #0065FC;
+}
+
+#sign_up{
+    padding: 2.8em;
+    color: #0065FC;
+    font-weight: bold;
+}
+
