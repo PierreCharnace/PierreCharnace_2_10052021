@@ -1,5 +1,19 @@
-
-ul{
-    list-style-type: none;
+body{
+    font-family: 'Raleway', sans-serif ;
 }
 
+header{
+    display: flex;
+    padding: 2.8em;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 20%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+}
