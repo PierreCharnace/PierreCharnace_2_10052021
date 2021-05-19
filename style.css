@@ -1,19 +1,5 @@
 
-#activities_content{
-    display: flex;
-    flex-wrap: wrap;
+ul{
+    list-style-type: none;
 }
 
-
-.activities{
-    display: flex;
-    height: 10em;
-    width: 10em;
-
-}
-.dual_photo{
-
-}
-figcaption{
-    
-}
