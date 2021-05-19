@@ -39,3 +39,25 @@ nav{
     font-weight: bold;
 }
 
+#search_bar{
+    display: flex;
+    width: 30em;
+    height: 3em;
+    margin-left: 4em;
+}
+
+.fas fa-map-marker-alt{
+    width: 1em;
+}
+
+input{
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 0.8em;
+    color: black;
+}
+
+input::placeholder{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
