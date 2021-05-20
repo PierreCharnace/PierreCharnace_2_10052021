@@ -1,11 +1,15 @@
 body{
     margin-top: 0em;
+ 
 }
 
 #block_page{
     font-family: 'Raleway', sans-serif ;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin-right: 6.5em;
+    margin-left: 6.5em;
+    padding-left: 3em;
+    padding-right: 8em;
+
 }
                     /*header*/
 header{
@@ -35,25 +39,36 @@ nav{
     border-top: #0065FC solid;
     color: #0065FC;
 }
-                    /*search_bar*/
+
 #sign_up{
     padding: 2.8em;
     color: #0065FC;
     font-weight: bold;
 }
+                                /*search_bar*/
+
+h1{
+    font-size: 1.4em;
+    margin-bottom: 0em;
+}
+
+h1 + p{
+    margin-top: 0.5em;
+    font-size: 0.99em;
+}
 
 #search_bar{
     display: flex;
-    height: 3.5em;
-    margin-top: 2em;
+    height: 3.2em;
+    margin-top: 1.8em;
     margin-bottom: 2em;
 }
 
 #search_icon{
     display: flex;
-    width: 3em;
+    width: 2.8em;
     background-color: #f2f2f2;
-    border-radius: 1em 0em 0em 1em;
+    border-radius: 0.8em 0em 0em 0.8em;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
@@ -61,8 +76,9 @@ nav{
 
 input{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding-left: 0.8em;
+    width: 12em;
     color: black;
     border: solid #f2f2f2 1px;
 }
@@ -75,17 +91,18 @@ input::placeholder{
 button{
     background-color: #0065FC;
     color: white;
-    border-radius: 0em 1em 1em 0em;
-    font-size: 1.3em ;
+    border-radius: 0em 0.8em 0.8em 0em;
+    font-size: 1.2em ;
     font-weight: bold;
     border-style: none;
-    width: 8em;
+    width: 7em;
 }
                     /*filters*/
 #filters{
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
+    align-items: center;
 }
 
 #filters_bar{
@@ -94,21 +111,36 @@ button{
 
 .filters_button{
     display: flex;
-    width: 12em;
+    height: 2.3em;
     align-items: center;
     border: lightgrey solid 2px;
     border-radius: 5em;
     margin-left: 2em;
+    padding-right: 1em ;
+    padding-left: 0.8em;
 }
 
 .filters_icon{
     display: flex;
-    border-radius: 1em;
-    background-color: #DEEBFF;
-    width: 2em;
-    height: 2em;
+    border-radius: 2em;
+    background-color: #DEEBFF ;
+    width: 2.2em;
+    height: 2.2em;
     justify-content: center;
     align-items: center;
     color: #0065FC;
     font-size: 1.2em;
+    position: relative;
+    left: -17px;
+}
+
+#text_info{
+    display: flex;
+}
+
+#text_info_icon{
+    color: #0065FC;
+    border: #f2f2f2 solid 1px;
+    border-radius: 1em;
+
 }
