@@ -124,8 +124,8 @@ button{
     display: flex;
     border-radius: 2em;
     background-color: #DEEBFF ;
-    width: 2.2em;
-    height: 2.2em;
+    width: 2.15em;
+    height: 2.15em;
     justify-content: center;
     align-items: center;
     color: #0065FC;
@@ -133,14 +133,46 @@ button{
     position: relative;
     left: -17px;
 }
-
+                /*filters_text_info*/
 #text_info{
     display: flex;
+    align-items: center;
 }
 
 #text_info_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #0065FC;
-    border: #f2f2f2 solid 1px;
+    border: lightgrey solid 1px;
     border-radius: 1em;
-
+    font-size: 0.7em;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
 }
+
+.filters_button:hover{
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+}
+
+                /*Lodging*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container_lodging{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50em;
+    background-color: #f2f2f2;
+}
+
+.lodging_card{
+    
+}
+
+
+
