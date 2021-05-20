@@ -46,15 +46,16 @@ nav{
     display: flex;
     height: 3.5em;
     margin-top: 2em;
-
+    margin-bottom: 2em;
 }
 
 #search_icon{
+    display: flex;
     width: 3em;
     background-color: #f2f2f2;
     border-radius: 1em 0em 0em 1em;
-    text-align: center;
-    padding-top: 0.8em;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2em;
 }
 
@@ -75,8 +76,39 @@ button{
     background-color: #0065FC;
     color: white;
     border-radius: 0em 1em 1em 0em;
-    font-size: 1.2em ;
+    font-size: 1.3em ;
     font-weight: bold;
     border-style: none;
     width: 8em;
+}
+                    /*filters*/
+#filters{
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#filters_bar{
+    display: flex;
+}
+
+.filters_button{
+    display: flex;
+    width: 12em;
+    align-items: center;
+    border: lightgrey solid 2px;
+    border-radius: 5em;
+    margin-left: 2em;
+}
+
+.filters_icon{
+    display: flex;
+    border-radius: 1em;
+    background-color: #DEEBFF;
+    width: 2em;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    font-size: 1.2em;
 }
