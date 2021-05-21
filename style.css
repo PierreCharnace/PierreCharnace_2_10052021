@@ -117,6 +117,7 @@ button{
     border: lightgrey solid 2px;
     border-radius: 5em;
     margin-left: 2em;
+    margin-bottom: 1.2em;
     padding-right: 1em ;
     padding-left: 0.8em;
 }
@@ -138,6 +139,8 @@ button{
 #text_info{
     display: flex;
     align-items: center;
+    margin-bottom: 1.2em;
+
 }
 
 #text_info_icon{
@@ -168,23 +171,34 @@ button{
 #lodging_marseille{
     display: flex;
     flex-wrap: wrap;
-    width: 40em;
     background-color: #f2f2f2;
     border-radius: 1.5em;
-    padding-left: 3em;
-
+    padding: 0em 1em;
+    width: 53em;
+    height: 40em;
+    justify-content: space-around;
 }
 
 h2{
     width: 100%;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-left: 1.2em;
+    font-size: 1.4em;
 }
 
 .lodging_card{
     display: flex;
     flex-direction: column;
     border: white 5px solid;
-    border-radius: 1em;
+    border-radius: 1.5em;
     background-color: white;
+    width: 16em;
+    height: 12.5em;
+    font-size: 0.9em;
+    box-shadow: 0.1em 0.1em 0.8em lightgrey, -0.1em -0.1em 0.8em lightgrey;
+    text-decoration: none;
+    color: black;
 }
 
 figure{
@@ -195,26 +209,88 @@ figure{
     display: flex;
     flex-wrap: wrap;
     height: 8em;
-    width: 15em;
+    width: 16em;
+    border-radius: 1.2em 1.2em 0em 0em;
 
 }        
 
-.stars{
-    color: #0065FC;
+figcaption p{
+    padding-left: 0.5em;
+    margin: 0.4em;
 }
 
+h3{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0.3em 0em 0em 0.8em;
+}
 
+span{
+    font-weight: bold;
+}
+
+.stars{
+    color: #0065FC;
+    padding-left: 1em;
+    font-size: 0.8em;
+
+}
+
+a + p{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 0.8em;
+}
 
                         /*The most populars*/                        
 #lodging_populars{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #f2f2f2;
+    margin-left: 2.8em;
+    padding-left: 2.35em;
+    border-radius: 1.5em;
+    width: 23.5em;
+}
+
+#populars_title{
+    display: flex;
+    height: 5em;
+    width: 100%;
+    align-items: center;
+}
+h2 + i{
+    font-size: 1.5em;
+}
+
+.populars_card{
+    display: flex;
+    flex-wrap: wrap;
+    border: white 5px solid;
+    border-radius: 1.5em;
+    background-color: white;
+    width: 22.5em;
+    height: 9em;
+    font-size: 0.9em;
+    box-shadow: 0.1em 0.1em 0.8em lightgrey, -0.1em -0.1em 0.8em lightgrey;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2.5em;
+}
+
+#populars_card + figure{
+    margin-left: 0 auto;
 }
 
 .lodging_populars_img{
-    height: 5em;
-    width: 10em;
+    height: 9em;
+    width: 9em;
+    border-radius: 1.2em 0em 0em 1.2em;
 
 }
 
+.populars_card  figcaption{
+    position: relative;
+    
+}
