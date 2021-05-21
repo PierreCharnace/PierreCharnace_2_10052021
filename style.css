@@ -1,6 +1,6 @@
 body{
     margin-top: 0em;
- 
+    
 }
 
 #block_page{
@@ -8,7 +8,8 @@ body{
     margin-right: 6.5em;
     margin-left: 6.5em;
     padding-left: 3em;
-    padding-right: 8em;
+    padding-right: 3em;
+    
 
 }
                     /*header*/
@@ -26,7 +27,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    width: 28%;
+    width: 33%;
 }
 
 .nav_bar{
@@ -133,7 +134,7 @@ button{
     position: relative;
     left: -17px;
 }
-                /*filters_text_info*/
+                        /*filters_text_info*/
 #text_info{
     display: flex;
     align-items: center;
@@ -157,22 +158,63 @@ button{
     border-color: #DEEBFF;
 }
 
-                /*Lodging*/
+                         /*Lodging*/
 .container{
     display: flex;
     flex-wrap: wrap;
 }
 
-#container_lodging{
+
+#lodging_marseille{
     display: flex;
     flex-wrap: wrap;
-    height: 50em;
+    width: 40em;
     background-color: #f2f2f2;
+    border-radius: 1.5em;
+    padding-left: 3em;
+
+}
+
+h2{
+    width: 100%;
 }
 
 .lodging_card{
-    
+    display: flex;
+    flex-direction: column;
+    border: white 5px solid;
+    border-radius: 1em;
+    background-color: white;
+}
+
+figure{
+    margin: 0 auto;
+}
+
+.lodging_marseille_img{
+    display: flex;
+    flex-wrap: wrap;
+    height: 8em;
+    width: 15em;
+
+}        
+
+.stars{
+    color: #0065FC;
 }
 
 
+
+                        /*The most populars*/                        
+#lodging_populars{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.lodging_populars_img{
+    height: 5em;
+    width: 10em;
+
+}
 
