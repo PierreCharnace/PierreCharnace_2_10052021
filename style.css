@@ -36,8 +36,11 @@ nav{
     color: black;
 }
 
-.nav_bar:hover{
+.nav_bar:focus{
     border-top: #0065FC solid;
+    color: #0065FC;
+}
+.nav_bar:hover{
     color: #0065FC;
 }
 
@@ -103,38 +106,45 @@ button{
     display: flex;
     font-size: 1.1em;
     font-weight: bold;
-    align-items: center;
 }
 
 #filters_bar{
     display: flex;
 }
 
-.filters_button{
-    display: flex;
-    height: 2.3em;
-    align-items: center;
-    border: lightgrey solid 2px;
-    border-radius: 5em;
-    margin-left: 2em;
-    margin-bottom: 1.2em;
-    padding-right: 1em ;
-    padding-left: 0.8em;
+#filters_p{
+    margin-top: auto;
+    padding-bottom: 1.8em;
 }
 
-.filters_icon{
+.filters_button{
     display: flex;
-    border-radius: 2em;
-    background-color: #DEEBFF ;
-    width: 2.15em;
-    height: 2.15em;
     justify-content: center;
     align-items: center;
+    height: 2.5em;
+    border: lightgrey solid 2px;
+    border-radius: 5em;
+    margin: 2em 1.2em;
+    padding-right: 1em ;
+}
+
+.filters_button:hover{
+    background-color: #f2f2f2;
+}
+
+.filters-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.6em 0 -0.19em;
+    border-radius: 2em;
+    background-color: #DEEBFF ;
+    width: 2.25em;
+    height: 2.29em;
     color: #0065FC;
     font-size: 1.2em;
-    position: relative;
-    left: -17px;
 }
+
                         /*filters_text_info*/
 #text_info{
     display: flex;
@@ -143,7 +153,7 @@ button{
 
 }
 
-#text_info_icon{
+.fa-info{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,14 +163,8 @@ button{
     font-size: 0.7em;
     width: 2em;
     height: 2em;
-    margin-right: 0.5em;
+    margin-right: 0.5em
 }
-
-.filters_button:hover{
-    background-color: #DEEBFF;
-    border-color: #DEEBFF;
-}
-
                          /*Lodging*/
 .container{
     display: flex;
@@ -171,32 +175,31 @@ button{
 #lodging_marseille{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #f2f2f2;
     border-radius: 1.5em;
-    padding: 0em 1em;
+    padding: 0 1em;
     width: 53em;
     height: 40em;
-    justify-content: space-around;
 }
 
 h2{
     width: 100%;
     margin-top: 2em;
     margin-bottom: 0;
-    padding-left: 1.2em;
+    padding-left: 1em;
     font-size: 1.4em;
 }
 
 .lodging_card{
     display: flex;
     flex-direction: column;
-    border: white 5px solid;
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
     border-radius: 1.5em;
     background-color: white;
-    width: 16em;
-    height: 12.5em;
-    font-size: 0.9em;
-    box-shadow: 0.1em 0.1em 0.8em lightgrey, -0.1em -0.1em 0.8em lightgrey;
+    width: 17.5em;
+    height: 14.2em;
+    font-size: 0.88em;
     text-decoration: none;
     color: black;
 }
@@ -209,31 +212,47 @@ figure{
     display: flex;
     flex-wrap: wrap;
     height: 8em;
-    width: 16em;
+    width: 16.8em;
+    border: 5px solid white;
     border-radius: 1.2em 1.2em 0em 0em;
+    object-fit: cover;
 
 }        
 
-figcaption p{
-    padding-left: 0.5em;
-    margin: 0.4em;
+.lodging_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1em;
+
 }
 
-h3{
-    font-weight: bold;
-    font-size: 1.1em;
-    margin: 0.3em 0em 0em 0.8em;
+figcaption h3{
+    margin: 0.4em 0 0.3em 0;
+}
+
+h3 + p{
+    margin: 0 0 0.3em 0 ;
 }
 
 span{
     font-weight: bold;
 }
+.lodging_stars{
+    display: flex;
+    margin-top: 0.2em;
+}
 
-.stars{
+.blue-stars{
     color: #0065FC;
-    padding-left: 1em;
-    font-size: 0.8em;
+    font-size: 0.85em;
+    ;
 
+}
+
+.grey-stars{
+    color: lightgrey;
+    font-size: 0.85em;
 }
 
 a + p{
@@ -248,49 +267,64 @@ a + p{
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    margin-left: 2.8em;
+    margin-left: 2.5em;
     padding-left: 2.35em;
     border-radius: 1.5em;
-    width: 23.5em;
+    width: 24em;
 }
 
 #populars_title{
     display: flex;
-    height: 5em;
-    width: 100%;
-    align-items: center;
+    width: 90%;
+    margin: 0 0 2em 0;
 }
+
+#populars_title_second{
+    padding-left: 0;
+}
+
 h2 + i{
-    font-size: 1.5em;
+    font-size: 1.4em;
+    padding-top: 2em;
 }
 
 .populars_card{
     display: flex;
     flex-wrap: wrap;
-    border: white 5px solid;
+    flex-direction: column;
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
     border-radius: 1.5em;
     background-color: white;
-    width: 22.5em;
-    height: 9em;
+    width: 23.9em;
+    height: 10.2em;
+    margin-bottom: 2.5em;
     font-size: 0.9em;
-    box-shadow: 0.1em 0.1em 0.8em lightgrey, -0.1em -0.1em 0.8em lightgrey;
     text-decoration: none;
     color: black;
-    margin-bottom: 2.5em;
 }
 
-#populars_card + figure{
-    margin-left: 0 auto;
+.card{
+    display: flex;
 }
 
 .lodging_populars_img{
-    height: 9em;
+    display: flex;
+    flex-wrap: wrap;
+    height: 9.5em;
     width: 9em;
     border-radius: 1.2em 0em 0em 1.2em;
-
+    border: white 5px solid;
+    word-wrap: break-word;
+    margin: 0 1em 0 0 ;
+    object-fit: cover;
 }
 
-.populars_card  figcaption{
-    position: relative;
-    
+.populars_info{
+    padding-top: 0.3em;
+}
+
+.populars_stars{
+    display: flex;
+    margin-top: 4em;
+    font-size: 0.9em;
 }
