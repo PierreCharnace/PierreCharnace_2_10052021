@@ -292,7 +292,7 @@ h2 + i{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: 0.2em 0.2em 0.8em lightgrey;
+    
     border-radius: 1.5em;
     background-color: white;
     width: 23.9em;
@@ -327,4 +327,72 @@ h2 + i{
     display: flex;
     margin-top: 4em;
     font-size: 0.9em;
+}
+                    /* Marseilles activities */
+
+#activities_container{
+    display: flex;
+}
+
+.simple_card{
+    display: flex;
+    height: 27em;
+    width: 20em;
+    border-radius: 1em;
+    margin-right: 2em;
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
+}
+
+.simple_img{
+    display: flex;
+    height: 24em;
+    width: 20em;
+    color: black;
+    object-fit: fill;
+    border-radius: 1em 1em 0 0;
+}
+
+.simple_activities{
+    color: black;
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
+    border-radius: 1em;
+}
+
+.dual_card{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    height: 27em;
+    width: 20em;
+    margin-right: 2em;
+}
+
+.dual_img{
+    display: flex;
+    height: 9.5em;
+    width: 20em;
+    color: black;
+    object-fit: cover;
+    border-radius: 1em;
+    border-radius: 1em 1em 0 0;
+}
+
+.dual_activities{
+    color: black;
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
+    border-radius: 1em;
+
+}
+
+#dual_up{
+    height: 12em;
+}  
+
+#dual_bottom{
+    ;
+}
+
+.activities_info{
+    font-weight: bold;
+
 }
