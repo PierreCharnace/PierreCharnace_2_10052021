@@ -1,16 +1,12 @@
 body{
-    margin-top: 0em;
+    margin: 0 ;
     
 }
 
 #block_page{
     font-family: 'Raleway', sans-serif ;
-    margin-right: 6.5em;
-    margin-left: 6.5em;
-    padding-left: 3em;
-    padding-right: 3em;
-    
-
+    margin: 0 7em 0 7em;
+    padding: 0 3em 0 3em;
 }
                     /*header*/
 header{
@@ -20,8 +16,7 @@ header{
 
 #logo{
     width: 20%;
-    padding-top: 2.8em;
-    padding-bottom: 1.5em;
+    padding: 2.8em 0 1em 0;
 }
                      /*NAV*/
 nav{
@@ -64,8 +59,7 @@ h1 + p{
 #search_bar{
     display: flex;
     height: 3.2em;
-    margin-top: 1.8em;
-    margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 #search_icon{
@@ -207,8 +201,6 @@ figure{
 }
 
 .lodging_marseille_img{
-    display: flex;
-    flex-wrap: wrap;
     height: 8em;
     width: 16.8em;
     border: 5px solid white;
@@ -263,10 +255,10 @@ a + p{
                         /*The most populars*/                        
 #lodging_populars{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #f2f2f2;
-    margin-left: 2.5em;
-    padding-left: 2.35em;
+    margin: 0 0 0 2.5em;
+    padding: 0 1em 0 2.35em;
     border-radius: 1.5em;
     width: 24em;
     height: 40em;
@@ -307,8 +299,6 @@ h2 + i{
 }
 
 .lodging_populars_img{
-    display: flex;
-    flex-wrap: wrap;
     height: 9.5em;
     width: 9em;
     border-radius: 1.2em 0em 0em 1.2em;
@@ -329,6 +319,10 @@ h2 + i{
 }
                     /* Marseilles activities */
 
+#title_activities{
+    padding: 0.5em 0 1em 0;
+}
+
 #activities_container{
     display: flex;
     justify-content: space-between;
@@ -347,6 +341,7 @@ h2 + i{
     height: 24em;
     width: 19em;
     border-radius: 1.5em 1.5em 0 0;
+    object-fit: cover;
 }
                         /*Dual card*/
 .dual_card{
@@ -355,27 +350,26 @@ h2 + i{
     justify-content: space-between;
 }
 
-.dual_activities{
-    box-shadow: 0.2em 0.2em 0.8em lightgrey;
-    border-radius: 1.5em;
-    text-decoration: none;
-}
-
 .dual{
     text-decoration: none;
     color: black;
 }
 
+.dual_activities{
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
+    border-radius: 1.5em;
+}
+
 .dual_img{
-    display: flex;
+
+    object-fit: cover;
     height: 9.5em;
     width: 19em;
-    object-fit: cover;
     border-radius: 1.5em 1.5em 0 0;
 }
 
 #dual_up_first{
-    height: 10em;
+    height: 11em;
 }  
 
 #dual_bottom_first{
@@ -383,15 +377,35 @@ h2 + i{
 }
 
 #dual_up_second{
-
+    height: 9em;
 }
 
 #dual_bottom_second{
-
+    height: 9.5em;
 }
 
 .activities_info{
     height: 2.5em;
     font-weight: bold;
     padding-left: 1em;
+}
+
+                    /*Footer*/
+
+footer{
+    display: flex;
+    background-color: #f2f2f2;
+    height: 13em;
+    margin-top: 3em;
+}
+
+.footer_list{
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    padding:0 4em 0 10em;
+    
+}
+
+.footer_list_li{
+    padding-bottom: 0.9em;
 }
