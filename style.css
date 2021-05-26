@@ -168,7 +168,6 @@ button{
                          /*Lodging*/
 .container{
     display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -193,7 +192,6 @@ h2{
 
 .lodging_card{
     display: flex;
-    flex-direction: column;
     box-shadow: 0.2em 0.2em 0.8em lightgrey;
     border-radius: 1.5em;
     background-color: white;
@@ -256,10 +254,10 @@ span{
 }
 
 a + p{
-    width: 100%;
     font-weight: bold;
     font-size: 1.2em;
-    padding-left: 0.8em;
+    width: 100%;
+    padding-left: 1em;
 }
 
                         /*The most populars*/                        
@@ -271,6 +269,7 @@ a + p{
     padding-left: 2.35em;
     border-radius: 1.5em;
     width: 24em;
+    height: 40em;
 }
 
 #populars_title{
@@ -332,67 +331,67 @@ h2 + i{
 
 #activities_container{
     display: flex;
+    justify-content: space-between;
 }
 
 .simple_card{
     display: flex;
-    height: 27em;
-    width: 20em;
-    border-radius: 1em;
-    margin-right: 2em;
+    border-radius: 1.5em;
     box-shadow: 0.2em 0.2em 0.8em lightgrey;
+    text-decoration: none;
+    color: black;
 }
 
 .simple_img{
     display: flex;
     height: 24em;
-    width: 20em;
-    color: black;
-    object-fit: fill;
-    border-radius: 1em 1em 0 0;
+    width: 19em;
+    border-radius: 1.5em 1.5em 0 0;
 }
-
-.simple_activities{
-    color: black;
-    box-shadow: 0.2em 0.2em 0.8em lightgrey;
-    border-radius: 1em;
-}
-
+                        /*Dual card*/
 .dual_card{
     display: flex;
-    align-content: space-between;
     flex-direction: column;
-    height: 27em;
-    width: 20em;
-    margin-right: 2em;
+    justify-content: space-between;
+}
+
+.dual_activities{
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
+    border-radius: 1.5em;
+    text-decoration: none;
+}
+
+.dual{
+    text-decoration: none;
+    color: black;
 }
 
 .dual_img{
     display: flex;
     height: 9.5em;
-    width: 20em;
-    color: black;
+    width: 19em;
     object-fit: cover;
-    border-radius: 1em;
-    border-radius: 1em 1em 0 0;
+    border-radius: 1.5em 1.5em 0 0;
 }
 
-.dual_activities{
-    color: black;
-    box-shadow: 0.2em 0.2em 0.8em lightgrey;
-    border-radius: 1em;
-
-}
-
-#dual_up{
-    height: 12em;
+#dual_up_first{
+    height: 10em;
 }  
 
-#dual_bottom{
-    ;
+#dual_bottom_first{
+    height: 7em;
+}
+
+#dual_up_second{
+
+}
+
+#dual_bottom_second{
+
 }
 
 .activities_info{
+    height: 2.5em;
     font-weight: bold;
-
+    padding-left: 1em;
 }

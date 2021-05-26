@@ -19,7 +19,7 @@
                     </div>
                     <nav>                       <!--NAV-->
                         <a href="#lodging" class="nav_bar">Hébergements</a>
-                        <a href="#activities_content" class="nav_bar">Activités</a>
+                        <a href="#activities_container" class="nav_bar">Activités</a>
                         <a id="sign_up"> S'inscrire</a>
                     </nav>
             </header>
@@ -220,6 +220,7 @@
                         </figure>
                     </a>
                 </div>
+            </section>
                 <section>                                            <!--Marseille actvities-->
                        <h2>Activités à Marseille</h2>
                     <div id="activities_container">
@@ -227,22 +228,22 @@
                             <figure class="simple_activities">
                                 <img src="images/vieux_port.jpg" alt="Vieux port" class="simple_img"/>
                                 <figcaption class="activities_info">
-                                    Vieux Port   
+                                    <p>Vieux Port</p>   
                                 </figcaption>
                             </figure>
                         </a>
                         <div class="dual_card">
-                            <a href="#">
+                            <a href="#" class="dual">
                                 <figure class="dual_activities">
-                                    <img src="images/fort_pomegues.jpg" alt="Fort de Pomègues" class="dual_img" id="dual_up">
+                                    <img src="images/fort_pomegues.jpg" alt="Fort de Pomègues" class="dual_img" id="dual_up_first">
                                     <figcaption class="activities_info">
                                         <p>Fort de Pomègue</p>
                                     </figcaption>
                                </figure>
                             </a>
-                            <a href="#">    
+                            <a href="#" class="dual">    
                                 <figure class="dual_activities">
-                                    <img src="images/frioul.jpg" alt="Île du Frioul" class="dual_img" id="dual_bottom"/>
+                                    <img src="images/frioul.jpg" alt="Île du Frioul" class="dual_img" id="dual_bottom_first"/>
                                     <figcaption class="activities_info">
                                         <p>Île du Frioul</p>   
                                     </figcaption>
@@ -258,15 +259,17 @@
                             </figure>
                         </a>
                         <div class="dual_card">
-                            <a href="#">
+                            <a href="#" class="dual">
                                 <figure class="dual_activities">
-                                    <img src="images/notredamedelagarde.jpg" alt="Notre-Dame-de-la-Garde" class="dual_img">
+                                    <img src="images/notredamedelagarde.jpg" alt="Notre-Dame-de-la-Garde" class="dual_img" id="dual_up_second">
                                     <figcaption class="activities_info">
                                         <p>Notre-Dame-de-la-Garde</p>
                                     </figcaption>
                                 </figure>
+                            </a>
+                            <a href="#" class="dual">
                                 <figure class="dual_activities">
-                                    <img src="images/parc_longchamp.jpg" alt="Parc Longchamp" class="dual_img">
+                                    <img src="images/parc_longchamp.jpg" alt="Parc Longchamp" class="dual_img" id="dual_up_second">
                                     <figcaption class="activities_info">
                                         <p>Parc Longchamp</p>
                                     </figcaption>
@@ -275,7 +278,6 @@
                         </div>
                     </div>
                 </section>
-            </section>
             <footer>                                <!--Footer-->
                 <ul class="footer_list">
                     <li><h3>À propos</h3></li>
