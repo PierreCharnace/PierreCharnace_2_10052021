@@ -1,9 +1,11 @@
 body{
     margin: 0 ;
-    
 }
 
 #block_page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-family: 'Raleway', sans-serif ;
     margin: 0 7em 0 7em;
     padding: 0 3em 0 3em;
@@ -11,18 +13,17 @@ body{
                     /*header*/
 header{
     display: flex;
-    justify-content: space-between;
 }
 
 #logo{
-    width: 20%;
-    padding: 2.8em 0 1em 0;
+    padding: 2.8em 0 0 2.8em;
+    margin-right: 50em;
 }
                      /*NAV*/
 nav{
     display: flex;
     justify-content: space-between;
-    width: 33%;
+    width: 30em;
 }
 
 .nav_bar{
@@ -100,6 +101,7 @@ button{
     display: flex;
     font-size: 1.1em;
     font-weight: bold;
+    margin-right: 21em;
 }
 
 #filters_bar{
@@ -108,18 +110,17 @@ button{
 
 #filters_p{
     margin-top: auto;
-    padding-bottom: 1.8em;
+    padding: 0 1em 1.8em 0;
 }
 
 .filters_button{
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 2.5em;
     border: lightgrey solid 2px;
     border-radius: 5em;
-    margin: 2em 1.2em;
-    padding-right: 1em ;
+    margin: 2em 0.8em;
+    padding-right: 1.5em ;
 }
 
 .filters_button:hover{
@@ -258,9 +259,9 @@ a + p{
     flex-wrap: wrap;
     background-color: #f2f2f2;
     margin: 0 0 0 2.5em;
-    padding: 0 1em 0 2.35em;
+    padding: 0 1.5em 0 2.35em;
     border-radius: 1.5em;
-    width: 24em;
+    width: 23em;
     height: 40em;
 }
 
@@ -282,9 +283,8 @@ h2 + i{
 .populars_card{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    
     border-radius: 1.5em;
+    box-shadow: 0.2em 0.2em 0.8em lightgrey;
     background-color: white;
     width: 23.9em;
     height: 10.2em;
@@ -303,7 +303,6 @@ h2 + i{
     width: 9em;
     border-radius: 1.2em 0em 0em 1.2em;
     border: white 5px solid;
-    word-wrap: break-word;
     margin: 0 1em 0 0 ;
     object-fit: cover;
 }
@@ -325,12 +324,12 @@ h2 + i{
 
 #activities_container{
     display: flex;
-    justify-content: space-between;
 }
 
 .simple_card{
     display: flex;
     border-radius: 1.5em;
+    margin-right: 2.5em;
     box-shadow: 0.2em 0.2em 0.8em lightgrey;
     text-decoration: none;
     color: black;
@@ -348,6 +347,7 @@ h2 + i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 2.5em;
 }
 
 .dual{
@@ -361,7 +361,6 @@ h2 + i{
 }
 
 .dual_img{
-
     object-fit: cover;
     height: 9.5em;
     width: 19em;
@@ -389,10 +388,8 @@ h2 + i{
     font-weight: bold;
     padding-left: 1em;
 }
-
-                    /*Footer*/
-
-footer{
+                                /*Footer*/
+footer{ 
     display: flex;
     background-color: #f2f2f2;
     height: 13em;
