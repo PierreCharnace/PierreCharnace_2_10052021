@@ -23,7 +23,7 @@
                         <a id="sign_up"> S'inscrire</a>
                     </nav>
             </header>
-            <section>        
+            <section id="search_and_filters_container">        
                 <div id="search">
                     <div id="comment">          <!--Search_bar-->
                         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -66,7 +66,7 @@
                                                         <!--Lodging-->
             <section class="container">
                 <div id="lodging_marseille">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 id="lodging_title">Hébergements à Marseille</h2>
                     <a href="#" class="lodging_card">
                         <figure>
                             <img src="images/la_cannebiere.jpg" alt="Auberge La Cannebière" class="lodging_marseille_img"/>
@@ -168,7 +168,7 @@
 
                 <div id="lodging_populars">                 <!--the most Populars-->
                     <div id="populars_title">
-                        <h2 id="populars_title_second">Les plus populaires</h2>
+                        <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <a href="#" class="populars_card">
@@ -222,10 +222,10 @@
                 </div>
             </section>
                 <section>                                            <!--Marseille actvities-->
-                       <h2 id="title_activities">Activités à Marseille</h2>
+                    <h2 id="title_activities">Activités à Marseille</h2>
                     <div id="activities_container">
                         <a href="#" class="simple_card"> 
-                            <figure class="simple_activities">
+                            <figure>
                                 <img src="images/vieux_port.jpg" alt="Vieux port" class="simple_img"/>
                                 <figcaption class="activities_info">
                                     <p>Vieux Port</p>   
@@ -234,7 +234,7 @@
                         </a>
                         <div class="dual_card">
                             <a href="#" class="dual">
-                                <figure class="dual_activities">
+                                <figure>
                                     <img src="images/fort_pomegues.jpg" alt="Fort de Pomègues" class="dual_img" id="dual_up_first">
                                     <figcaption class="activities_info">
                                         <p>Fort de Pomègue</p>
@@ -242,7 +242,7 @@
                                </figure>
                             </a>
                             <a href="#" class="dual">    
-                                <figure class="dual_activities">
+                                <figure>
                                     <img src="images/frioul.jpg" alt="Île du Frioul" class="dual_img" id="dual_bottom_first"/>
                                     <figcaption class="activities_info">
                                         <p>Île du Frioul</p>   
@@ -251,7 +251,7 @@
                             </a>    
                         </div>
                         <a href="#" class="simple_card">    
-                            <figure class="simple_activities">
+                            <figure>
                                 <img src="images/parc_calanques.jpg" alt="Parc national des Calanques" class="simple_img"/>
                                 <figcaption class="activities_info">
                                     <p>Parc national des calanques</p>
@@ -260,7 +260,7 @@
                         </a>
                         <div class="dual_card">
                             <a href="#" class="dual">
-                                <figure class="dual_activities">
+                                <figure>
                                     <img src="images/notredamedelagarde.jpg" alt="Notre-Dame-de-la-Garde" class="dual_img" id="dual_up_second">
                                     <figcaption class="activities_info">
                                         <p>Notre-Dame-de-la-Garde</p>
@@ -268,7 +268,7 @@
                                 </figure>
                             </a>
                             <a href="#" class="dual">
-                                <figure class="dual_activities">
+                                <figure>
                                     <img src="images/parc_longchamp.jpg" alt="Parc Longchamp" class="dual_img" id="dual_bottom_second">
                                     <figcaption class="activities_info">
                                         <p>Parc Longchamp</p>
@@ -279,23 +279,25 @@
                     </div>
                 </section>
         </div>        
-        <footer>                                <!--Footer-->
-            <ul class="footer_list">
-                <li><h3>À propos</h3></li>
-                <li class="footer_list_li">Fonctionnement du site</li>
-                <li class="footer_list_li">Conditions générales de vente</li>
-                <li class="footer_list_li">Données et confidentialité</li>
-            </ul>
-            <ul class="footer_list">
-                <li><h3>Nos hébergements</h3></li>
-                <li class="footer_list_li">Charte qualité</li>
-                <li class="footer_list_li">Soumettre votre hôtel</li>
-           </ul>
-            <ul class="footer_list">
-                <li><h3>Asistance</h3></li>
-                <li class="footer_list_li">Centre d'aide</li>
-                <li class="footer_list_li">Nous contacter</li>
-            </ul>
+        <footer>
+            <div id="footer_container">                         <!--Footer-->
+                <ul class="footer_list">
+                    <li><h3>À propos</h3></li>
+                    <li class="footer_list_li">Fonctionnement du site</li>
+                    <li class="footer_list_li">Conditions générales de vente</li>
+                    <li class="footer_list_li">Données et confidentialité</li>
+                </ul>
+                <ul class="footer_list">
+                    <li><h3>Nos hébergements</h3></li>
+                    <li class="footer_list_li">Charte qualité</li>
+                    <li class="footer_list_li">Soumettre votre hôtel</li>
+                </ul>
+                <ul class="footer_list">
+                    <li><h3>Asistance</h3></li>
+                    <li class="footer_list_li">Centre d'aide</li>
+                    <li class="footer_list_li">Nous contacter</li>
+                </ul>
+            </div>
         </footer>
     </body>
 
