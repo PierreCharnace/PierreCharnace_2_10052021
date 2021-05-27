@@ -319,17 +319,18 @@ h2 + i{
                     /* Marseilles activities */
 
 #title_activities{
-    padding: 0.5em 0 1em 0;
+    padding: 0.5em 0 1em 2.5em;
 }
 
 #activities_container{
     display: flex;
+    padding: 0 1em 0 2.8em;
 }
 
 .simple_card{
     display: flex;
     border-radius: 1.5em;
-    margin-right: 2.5em;
+    margin: 0 2.7em 0 0.3em;
     box-shadow: 0.2em 0.2em 0.8em lightgrey;
     text-decoration: none;
     color: black;
