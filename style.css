@@ -15,18 +15,20 @@ header{
 }
 
 #logo{
-    margin-right: 52.5em;
+    margin-right: 50.5em;
     padding: 2.8em 0 1em 0;
 }
                      /*NAV*/
 nav{
     display: flex;
-    justify-content: space-between;
+    margin-right: 2em;
     width: 25em;
 }
 
 .nav_bar{
-    padding: 2.8em 1em 0 1em;
+    display: flex;
+    height: 2em;
+    padding: 2.8em 2em 0 2em;
     text-decoration: none;
     color: black;
 }
@@ -40,10 +42,38 @@ nav{
 }
 
 #sign_up{
-    padding: 2.8em 0em 0 0;
     color: #0065FC;
     font-weight: bold;
+    border-bottom: inherit;
 }
+
+@media screen and (max-width: 1024px){
+
+   
+}
+
+
+@media screen and (max-width: 600px){
+    header{
+            flex-direction: column;
+        
+    }
+
+    #logo{
+        margin-right: inherit;
+    }
+
+    .nav_bar:focus{
+        border-top: none;
+        border-bottom: #0065FC solid;
+        color: #0065FC;
+    }
+    .nav_bar{
+        border-bottom: #f2f2f2 solid;
+    }
+
+}
+
                                 /*search_bar*/
 
 h1{
@@ -141,6 +171,10 @@ button{
     height: 2.29em;
     color: #0065FC;
     font-size: 1.2em;
+}
+
+.filters-dog{
+    min-width: 12.1em;
 }
 
                         /*filters_text_info*/
@@ -243,8 +277,6 @@ span{
 .blue-stars{
     color: #0065FC;
     font-size: 0.85em;
-    ;
-
 }
 
 .grey-stars{
@@ -272,9 +304,15 @@ a + p{
     height: 39em;
 }
 
+@media screen {
+    #lodging_populars{
+
+    }
+}
+
 #populars_title{
     display: flex;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
 }
 
 h2 + i{
@@ -307,7 +345,7 @@ h2 + i{
 }
 
 .populars_info{
-    padding-top: 0.3em;
+    padding: 1em 0 0.3em 0;
 }
 
 .populars_stars{
@@ -405,9 +443,3 @@ footer{
     padding-bottom: 0.9em;
 }
 
-@media all and (max-width: 1024px){
-    #block_page
-    {
-        width: auto;
-    }
-}
