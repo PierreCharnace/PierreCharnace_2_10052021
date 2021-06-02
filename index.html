@@ -3,7 +3,7 @@
 
    <head>
         <meta charset="utf-8" />
-        <title>Reservia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>Reservia</title>
         <link rel="shortcut icon" href="images/Reservia@3x.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,26 +16,27 @@
             <header>                             <!--Header-->
                     <div id="logo">
                         <img src="images/reservia.svg" alt="reservia" title="logo"/>
-
                     </div>
-                    <nav>                       <!--NAV-->
+                                                <!--NAV-->
+                    <nav>
                         <a href="#lodging" class="nav_bar">Hébergements</a>
                         <a href="#activities_container" class="nav_bar">Activités</a>
-                        <a id="sign_up" class="nav_bar"> S'inscrire</a>
                     </nav>
+                        <a id="sign_up" class="nav_bar"> S'inscrire</a>
             </header>
-            <section>        
+            <section id="search_container">        
                 <div id="search">
                     <div id="comment">          <!--Search_bar-->
                         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <form id="search_bar">
-                        <div id="search_icon">
                             <i class="fas fa-map-marker-alt"></i>
-                        </div>
                         <input type="text" name="recherche" placeholder="Marseille, France" />
-                        <button>Rechercher</button>
+                        <button>
+                            <span id="button_text">Rechercher</span>
+                            <i class="fas fa-search"></i>
+                        </button>
                     </form>
                 </div>
                 <div id="filters_bar">              <!--Filters-->                    

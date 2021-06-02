@@ -11,24 +11,25 @@ body{
                     /*header*/
 header{
     display: flex;
-    justify-content: space-between;
 }
 
 #logo{
-    margin-right: 50.5em;
+    margin-right: 49em;
     padding: 2.8em 0 1em 0;
 }
                      /*NAV*/
 nav{
     display: flex;
-    margin-right: 2em;
-    width: 25em;
+    justify-content: space-between;
+    width: 19em;
 }
 
 .nav_bar{
     display: flex;
+    justify-content: center;
     height: 2em;
-    padding: 2.8em 2em 0 2em;
+    width: 9.5em;
+    padding: 2.8em 0 0 0;
     text-decoration: none;
     color: black;
 }
@@ -36,6 +37,7 @@ nav{
 .nav_bar:focus{
     border-top: #0065FC solid;
     color: #0065FC;
+    padding: 2.6em 0 0 0;
 }
 .nav_bar:hover{
     color: #0065FC;
@@ -47,7 +49,6 @@ nav{
     border-bottom: inherit;
 }
                                 /*search_bar*/
-
 h1{
     font-size: 1.4em;
     margin-bottom: 0em;
@@ -67,14 +68,13 @@ h1 + p{
     display: flex;
     height: 3.2em;
 }
-
-#search_icon{
-    display: flex;
-    width: 2.8em;
-    background-color: #f2f2f2;
-    border-radius: 0.8em 0em 0em 0.8em;
+.fa-map-marker-alt{
+    display: flex !important;
     justify-content: center;
     align-items: center;
+    width: 3em;
+    background-color: #f2f2f2;
+    border-radius: 0.8em 0em 0em 0.8em;
     font-size: 1.1em;
 }
 
@@ -93,13 +93,19 @@ input::placeholder{
 }
 
 button{
+    padding: 0.7em 0.8em 0 0.8em;
     background-color: #0065FC;
     color: white;
     border-radius: 0em 0.8em 0.8em 0em;
     font-size: 1.2em ;
     font-weight: bold;
     border-style: none;
-    width: 7em;
+}
+
+.fa-search{
+    display: flex !important;
+    justify-content: center;
+    visibility: collapse;
 }
                     /*filters*/
 #filters_bar{
@@ -121,7 +127,7 @@ button{
     border: lightgrey solid 2px;
     border-radius: 5em;
     margin: 2em 0.8em  1.3em 0.8em;
-    padding-right: 1.5em ;
+    padding-right: 1em ;
 }
 
 .filters_button:hover{
@@ -135,14 +141,14 @@ button{
     margin: 0 0.6em 0 -0.19em;
     border-radius: 2em;
     background-color: #DEEBFF ;
-    width: 2.25em;
-    height: 2.29em;
+    width: 2.45em;
+    height: 2.45em;
     color: #0065FC;
     font-size: 1.1em;
 }
 
 .filters-dog{
-    min-width: 12.1em;
+    min-width: 12.1em!important;
 }
                         /*filters_text_info*/
 #text_info{
@@ -219,9 +225,7 @@ figure{
 .lodging_info{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin-left: 1em;
-
 }
 
 figcaption h3{
@@ -345,10 +349,10 @@ h2 + i{
 }
                         /*Dual card*/
 .dual_card{
-    margin-top: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+     margin-top: 1.5em;
 }
 
 .dual{
@@ -409,23 +413,92 @@ footer{
     padding-bottom: 0.9em;
 }
 
-@media screen and (max-width: 600px){
+@media all and (min-width: 375px) and (max-width: 600px){
+    
+    #block_page{
+        display: inherit;
+    }
+
     header{
-            flex-direction: column;
-        
+        justify-content: unset!important;
+        flex-wrap: wrap;
     }
 
     #logo{
-        margin-right: inherit;
+        width: 6em;
+        margin: 0 0 0 1.3em;
+        padding: 1.5em 0 0 0;
     }
+
+    nav{
+       width: 100%;
+    }
+
+    .nav_bar{
+        width: 100%;
+        border-bottom: #f2f2f2 solid;
+    }
+
 
     .nav_bar:focus{
         border-top: none;
         border-bottom: #0065FC solid;
         color: #0065FC;
     }
-    .nav_bar{
-        border-bottom: #f2f2f2 solid;
+
+    #sign_up{
+        position: relative;
+        bottom: 7em;
+        left: 8.5em;
+        padding: 0 0 0 0;
     }
 
-}
+    #search_container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 1em 0 1em;
+        
+    }
+
+    h1{
+        margin-top: 0;
+    }
+
+    input{
+        border-right: none;
+    }
+
+    button{
+        padding: 0 0 2em 0;
+        border-radius: 0.8em;
+        width: 2.8em;
+    }
+
+    #button_text{
+        visibility: collapse;
+    }
+
+    .fa-search{
+        visibility: inherit;
+    }
+
+    #filters_bar{
+        
+        flex-wrap: wrap;
+    }
+
+    #filters_p{
+        margin: 2em 0 0 0;
+        padding: 0;
+    }
+    .filters_button{
+    display: flex;
+    width: 9.5em;
+    padding-right: 1em;
+    font-size: 0.9em;
+    margin: 0.8em 0 0 0;
+    }
+
+
+
+{
