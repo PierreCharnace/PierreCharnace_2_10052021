@@ -21,29 +21,40 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    width: 19em;
+    width: 28em;
 }
 
-.nav_bar{
+#nav_bar{
+    display: flex;
+}
+
+.sub_nav_bar{
     display: flex;
     justify-content: center;
     height: 2em;
-    width: 9.5em;
-    padding: 2.8em 0 0 0;
+    width: 5em;
+    padding: 2.8em 2em 0 2em;
     text-decoration: none;
     color: black;
 }
 
-.nav_bar:focus{
+.sub_nav_bar:focus{
     border-top: #0065FC solid;
     color: #0065FC;
-    padding: 2.6em 0 0 0;
+    padding: 2.6em 2em 0 2em;
 }
-.nav_bar:hover{
+.sub_nav_bar:hover{
     color: #0065FC;
 }
 
 #sign_up{
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    width: 5em;
+    padding: 2.8em 2em 0 0;
+    text-decoration: none;
+    color: black;
     color: #0065FC;
     font-weight: bold;
     border-bottom: inherit;
@@ -62,6 +73,8 @@ h1 + p{
 #search{
     display: flex;
     flex-direction: column;
+    width: 83em;
+
 }
 
 #search_bar{
@@ -330,6 +343,8 @@ h2 + i{
 .simple_card{
     margin-top: 1.5em;
     border-radius: 1.5em;
+    height: 24em;
+    width: 19em;
     box-shadow: 0.2em 0.2em 0.8em lightgrey;
     text-decoration: none;
     color: black;
@@ -385,75 +400,76 @@ h2 + i{
 }
                                 /*Footer*/
 footer{ 
-    background-color: #f2f2f2;
-    height: 13em;
-    margin-top: 4em;
-}
-
-#footer_container{
     display: flex;
-    justify-content: center;
-    width: 94.5%;
-    height: 10em;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    height: 12em;
+    padding-left: 10em;
+    margin: 4em 0 0 0;
 }
 
 .footer_list{
-    padding: 0 15em 0 0;
+    padding: 0 13.6em 0 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
 }
 
 .footer_list_li{
     padding-bottom: 0.9em;
-}
-                /*mobile device screen*/
-@media all and (min-width: 375px) and (max-width: 600px){
-    
-    #block_page{
-        display: inherit;
-    }
+}                         /*********************\
+                         /*MOBILE DEVICE SCREEN*/
+                    
 
+@media all and (min-width: 375px) and (max-width: 600px){
+                    /*header*/
     header{
-        justify-content: unset!important;
-        flex-wrap: wrap;
+        width: 100%;
     }
 
     #logo{
-        width: 6em;
-        margin: 0 0 0 1.3em;
-        padding: 1.5em 0 0 0;
+        width: 26%;
+        height: 5em;
+        margin: 0 6em 0 1.3em;
+        padding: 2em 0 0 0;
     }
 
     nav{
-       width: 100%;
+        flex-wrap: wrap-reverse ;
+        justify-content: flex-end;
+        width: 30%;
     }
 
-    .nav_bar{
-        width: 100%;
+    #nav_bar{
+        display: flex;
+    }
+
+    .sub_nav_bar{
+        padding: 2.8em 0 0 0;
+        width: 11em;
         border-bottom: #f2f2f2 solid;
     }
 
-
-    .nav_bar:focus{
+    .sub_nav_bar:focus{
         border-top: none;
         border-bottom: #0065FC solid;
         color: #0065FC;
     }
 
     #sign_up{
-        position: relative;
-        bottom: 7em;
-        left: 8.5em;
-        padding: 0 0 0 0;
+        width: 30%%;
+        padding: 3em 0 0 0;
     }
 
     #search_container{
         display: flex;
         flex-direction: column;
-        margin: 0 1em 0 1em;
-        
+        margin: 0 1em 0 0;
     }
 
+    #search{
+        width: 100%;
+    }
+ 
     h1{
         margin-top: 0;
     }
@@ -475,14 +491,14 @@ footer{
     .fa-search{
         visibility: inherit;
     }
-
+                        /*filters*/
     #filters_bar{
         flex-wrap: wrap;
         margin: 0;
     }
 
     #filters_p{
-        margin: 2em 100% 0 0;
+        margin: 2em 8em 0 0;
         padding: 0;
     }
     .filters_button{
@@ -497,39 +513,92 @@ footer{
         margin-top: 1em;
     }
 
+    .fa-info{
+        width: 2.5em;
+        margin-bottom: 1.5em;
+    }
+                    /*Lodging_populars*/
     #container{
         flex-direction: column-reverse;
+    }
+
+    #populars_title{
+        margin-bottom: 0;
     }
 
     #lodging_populars{
         margin: inherit;
         width: 100%;
+        height: 36em;
         border-radius: inherit;
     }
 
     .populars_card{
         margin-bottom: 0.8em;
     }
-
+                    /*Lodging_Marseille*/
     #lodging_marseille{
         justify-content: center;
         background-color: inherit;
         width: inherit;
+        height: inherit;
         padding: inherit;
     }
 
     h2{
-    margin: 0.5em 0 1em 0;
+    margin: 1.8em 0 1em 0;
     width: inherit;
+    padding: 0;
     }
 
     .lodging_card{
         width: 90%;
         margin: 0.4em 0 0.4em 0;
-        
     }
 
     .lodging_marseille_img{
         width: 97%;
+    }
+                    /*Marseille_Activities*/
+    #activities_container{
+        align-content: inherit;
+        justify-content: inherit;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .simple_img, .dual_img{
+        width: 95%;
+        height: 20em;
+        margin: 0 0.5em 0 0.5em;
+    }
+
+    .dual, .simple_card{
+        display: inherit;
+        flex-direction: inherit;
+    }
+
+    #dual_up_first, #dual_bottom_first, #dual_up_second, #dual_bottom_second{
+        height: inherit;
+    }
+
+
+    body{
+        margin: inherit;
+    }
+
+
+
+    footer{
+        height: inherit;
+        width: 100%;
+        flex-direction: column;
+        padding-left: 1em;
+        margin: inherit;
+    }
+
+    .footer_list{
+        padding: inherit;
+        margin-right: inherit;
     }
 }

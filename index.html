@@ -19,10 +19,12 @@
                     </div>
                                                 <!--NAV-->
                     <nav>
-                        <a href="#lodging" class="nav_bar">Hébergements</a>
-                        <a href="#activities_container" class="nav_bar">Activités</a>
+                        <div id="nav_bar">
+                            <a href="#lodging" class="sub_nav_bar" id="sub_nav_bar_lodging">Hébergements</a>
+                            <a href="#activities_container" class="sub_nav_bar">Activités</a>
+                        </div>
+                            <a id="sign_up"> S'inscrire</a>
                     </nav>
-                        <a id="sign_up" class="nav_bar"> S'inscrire</a>
             </header>
             <section id="search_container">        
                 <div id="search">
@@ -221,8 +223,8 @@
                     </a>
                 </div>
             </section>
-                <section>                                            <!--Marseille actvities-->
-                    <div id="activities_container">
+                                                      <!--Marseille actvities-->
+            <section id="activities_container">
                         <h2 id="title_activities">Activités à Marseille</h2>
                         <a href="#" class="simple_card"> 
                             <figure>
@@ -276,11 +278,9 @@
                                 </figure>
                             </a>    
                         </div>
-                    </div>
-                </section>
+            </section>
         </div>        
-        <footer>
-            <div id="footer_container">                         <!--Footer-->
+        <footer>                     <!--Footer-->
                 <ul class="footer_list">
                     <li><h3>À propos</h3></li>
                     <li class="footer_list_li">Fonctionnement du site</li>
@@ -297,7 +297,6 @@
                     <li class="footer_list_li">Centre d'aide</li>
                     <li class="footer_list_li">Nous contacter</li>
                 </ul>
-            </div>
         </footer>
     </body>
 
