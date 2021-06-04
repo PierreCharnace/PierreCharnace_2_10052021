@@ -106,7 +106,9 @@ input::placeholder{
 }
 
 button{
-    padding: 0.7em 0.8em 0 0.8em;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0 0.8em 0.8em 0;
     background-color: #0065FC;
     color: white;
     border-radius: 0em 0.8em 0.8em 0em;
@@ -117,7 +119,6 @@ button{
 
 .fa-search{
     display: flex !important;
-    justify-content: center;
     visibility: collapse;
 }
                     /*filters*/
@@ -294,7 +295,7 @@ a + p{
 
 h2 + i{
     font-size: 1.4em;
-    padding: 2em 0 0 5.1em;
+    padding: 2em 0 0 4.5em;
 }
 
 .populars_card{
@@ -401,16 +402,21 @@ h2 + i{
 }
                                 /*Footer*/
 footer{ 
-    display: flex;
-    flex-wrap: wrap;
     background-color: #f2f2f2;
     height: 12em;
-    padding-left: 8em;
-    margin: 4em 0 0 0;
+    padding-left: 0;
+    margin-top: 3em;
+}
+
+footer section{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    width: 96%;
 }
 
 .footer_list{
-    padding: 0 13.6em 0 0;
+    padding: 0 16em 0 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
 }
@@ -441,16 +447,12 @@ footer{
     nav{
         flex-wrap: wrap-reverse ;
         justify-content: flex-end;
-        width: 40%;
-    }
-
-    #nav_bar{
-        display: flex;
+        width: 43.5%;
     }
 
     .sub_nav_bar{
         padding: 2.8em 0 0 0;
-        width: 11em;
+        width: 11.7em;
         border-bottom: #f2f2f2 solid;
     }
 
@@ -462,43 +464,52 @@ footer{
     }
 
     #sign_up{
-        width: 30%%;
         padding: 3em 0 0 0;
     }
 
     #comment{
+        width: 90%;
         margin: 2em 0 2em 0;
     }
-
+                                /*Search*/
     #search_container{
         display: flex;
         flex-direction: column;
-        margin: 0 0 0 1em;
+        width: 90%;
     }
 
     #search{
         width: 100%;
     }
- 
-    h1{
-        margin-top: 0;
+    #search_bar{
+        width: 21em;
+    }
+
+    .fa-map-marker-alt{
+        width: 25%;
     }
 
     input{
+        width: 100%;
         border-right: none;
     }
 
     button{
-        padding: 0 0 2em 0;
+        flex-wrap: wrap;
+        padding: 0.8em 0 0 0.8em;
         border-radius: 0.8em;
-        width: 2.8em;
+        width: 22%;
     }
 
     #button_text{
+        display: none;
         visibility: collapse;
     }
 
     .fa-search{
+        justify-content: center;
+        align-content: center;
+
         visibility: inherit;
     }
                         /*filters*/
@@ -508,7 +519,7 @@ footer{
     }
 
     #filters_p{
-        margin: 2em 100% 0 0;
+        margin: 2em 70% 0 0;
         padding: 0;
     }
     .filters_button{
@@ -518,18 +529,23 @@ footer{
     margin: 0.8em 1em 0 0;
     }
 
-
     #text_info{
         margin-top: 1em;
+        width: 100%;
     }
 
     .fa-info{
-        width: 25px;
-        height: 23px;
+        padding: 0.2em 0.2em 0.2em 0.2em;
     }
                     /*The_most_populars*/
     #container{
         flex-direction: column-reverse;
+    }
+
+    h2{
+        margin: 1.5em 0 1em 0;
+        width: inherit;
+        padding: 0;
     }
 
     #populars_title{
@@ -544,26 +560,25 @@ footer{
     }
 
     .populars_card{
-        width: 100%;
+        width: 90%;
         margin-bottom: 0.8em;
     }
                     /*Lodging_Marseille*/
     #lodging_marseille{
-        justify-content: center;
+        margin: 0 0 0 5%;
         background-color: inherit;
         width: inherit;
         height: inherit;
         padding: inherit;
     }
 
-    h2{
-    margin: 1.8em 0 1em 0;
-    width: inherit;
-    padding: 0;
+    #lodging_marseille h2{
+        margin: 0 0 1em 0;
     }
 
+    
     .lodging_card{
-        width: 90%;
+        width: 95%;
         margin: 0.4em 0 0.4em 0;
     }
 
@@ -573,7 +588,6 @@ footer{
 
     a + p{
         margin: 1em 0 0 0;
-        padding-left: 1em;
     }
                     /*Marseille_Activities*/
     #activities_container{
@@ -600,7 +614,7 @@ footer{
         color: black;
     }
 
-     .simple_img, .dual_img{
+    .simple_img, .dual_img{
         width: 100%;
         height: 8em!important;
     }
@@ -608,12 +622,14 @@ footer{
     footer{
         height: inherit;
         width: 100%;
+    }
+
+    footer section{
         flex-direction: column;
-        padding-left: unset;
     }
 
     .footer_list{
-        padding: 0 0 0 1em;
+        padding: 0 0 0 6%;
         margin-right: inherit;
     }
 }
