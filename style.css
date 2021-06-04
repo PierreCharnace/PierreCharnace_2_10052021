@@ -339,11 +339,11 @@ h2 + i{
     align-content: space-around;
     width: 84em;
 }
-
+                    /*Simple_card*/
 .simple_card{
     margin-top: 1.5em;
     border-radius: 1.5em;
-    height: 24em;
+    height: 27.5em;
     width: 19em;
     box-shadow: 0.2em 0.2em 0.8em lightgrey;
     text-decoration: none;
@@ -361,7 +361,8 @@ h2 + i{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-     margin-top: 1.5em;
+    align-content: space-between;
+    margin-top: 1.5em;
 }
 
 .dual{
@@ -404,7 +405,7 @@ footer{
     flex-wrap: wrap;
     background-color: #f2f2f2;
     height: 12em;
-    padding-left: 10em;
+    padding-left: 8em;
     margin: 4em 0 0 0;
 }
 
@@ -416,18 +417,22 @@ footer{
 
 .footer_list_li{
     padding-bottom: 0.9em;
-}                         /*********************\
-                         /*MOBILE DEVICE SCREEN*/
+}                        /**********************\
+                         \*MOBILE DEVICE SCREEN*/
                     
-
 @media all and (min-width: 375px) and (max-width: 600px){
-                    /*header*/
+                          /*header*/
+
+    body{
+        margin: inherit;
+    }
+
     header{
         width: 100%;
     }
 
     #logo{
-        width: 26%;
+        width: 25%;
         height: 5em;
         margin: 0 6em 0 1.3em;
         padding: 2em 0 0 0;
@@ -436,7 +441,7 @@ footer{
     nav{
         flex-wrap: wrap-reverse ;
         justify-content: flex-end;
-        width: 30%;
+        width: 40%;
     }
 
     #nav_bar{
@@ -453,6 +458,7 @@ footer{
         border-top: none;
         border-bottom: #0065FC solid;
         color: #0065FC;
+        padding: 2.8em 0 0 0;
     }
 
     #sign_up{
@@ -460,10 +466,14 @@ footer{
         padding: 3em 0 0 0;
     }
 
+    #comment{
+        margin: 2em 0 2em 0;
+    }
+
     #search_container{
         display: flex;
         flex-direction: column;
-        margin: 0 1em 0 0;
+        margin: 0 0 0 1em;
     }
 
     #search{
@@ -498,7 +508,7 @@ footer{
     }
 
     #filters_p{
-        margin: 2em 8em 0 0;
+        margin: 2em 100% 0 0;
         padding: 0;
     }
     .filters_button{
@@ -514,10 +524,10 @@ footer{
     }
 
     .fa-info{
-        width: 2.5em;
-        margin-bottom: 1.5em;
+        width: 25px;
+        height: 23px;
     }
-                    /*Lodging_populars*/
+                    /*The_most_populars*/
     #container{
         flex-direction: column-reverse;
     }
@@ -534,6 +544,7 @@ footer{
     }
 
     .populars_card{
+        width: 100%;
         margin-bottom: 0.8em;
     }
                     /*Lodging_Marseille*/
@@ -559,46 +570,50 @@ footer{
     .lodging_marseille_img{
         width: 97%;
     }
+
+    a + p{
+        margin: 1em 0 0 0;
+        padding-left: 1em;
+    }
                     /*Marseille_Activities*/
     #activities_container{
         align-content: inherit;
-        justify-content: inherit;
-        width: 95%;
+        justify-content: space-between;
         flex-direction: column;
+        width: 90%;
+        height: 88em;
     }
 
-    .simple_img, .dual_img{
-        width: 95%;
-        height: 20em;
-        margin: 0 0.5em 0 0.5em;
+    .dual_card{
+        height: 25.6em;
+        margin-top: 0;
     }
 
     .dual, .simple_card{
-        display: inherit;
-        flex-direction: inherit;
+        box-shadow: 0.1em 0.1em 0.8em lightgrey;
+        border-radius: 1.5em;
+        background-color: white;
+        width: 100%;
+        height: 12em;
+        margin-top: 0;
+        text-decoration: none;
+        color: black;
     }
 
-    #dual_up_first, #dual_bottom_first, #dual_up_second, #dual_bottom_second{
-        height: inherit;
+     .simple_img, .dual_img{
+        width: 100%;
+        height: 8em!important;
     }
-
-
-    body{
-        margin: inherit;
-    }
-
-
 
     footer{
         height: inherit;
         width: 100%;
         flex-direction: column;
-        padding-left: 1em;
-        margin: inherit;
+        padding-left: unset;
     }
 
     .footer_list{
-        padding: inherit;
+        padding: 0 0 0 1em;
         margin-right: inherit;
     }
 }
