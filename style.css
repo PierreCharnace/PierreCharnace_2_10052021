@@ -644,8 +644,16 @@ footer section{
         margin-right: inherit;
     }
                 
+}
 
-    @media all and (min-width: 600px) and (max-width: 1023px) {
+@media all and (min-width: 600px) and (max-width: 1023px) {
         
+    header{
+        width: 70%;
+        justify-content: space-between;
     }
+    #logo{
+        margin-right: 10%;
+    }
+    
 }
