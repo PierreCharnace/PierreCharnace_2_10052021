@@ -252,6 +252,7 @@ h3 + p{
 span{
     font-weight: bold;
 }
+
 .lodging_stars{
     display: flex;
     margin-top: 0.2em;
@@ -510,7 +511,7 @@ footer section{
 
         visibility: inherit;
     }
-                        /*filters*/
+                            /*filters*/
     #filters_bar{
         flex-wrap: wrap;
         margin: 0;
@@ -531,40 +532,11 @@ footer section{
         margin-top: 1em;
         width: 100%;
     }
-
-    .fa-info{
-        padding: 0.2em 0.2em 0.2em 0.2em;
-    }
-                    /*The_most_populars*/
-    #container{
-        flex-direction: column-reverse;
-    }
-
-    h2{
-        margin: 1.5em 0 1em 0;
-        width: inherit;
-        padding: 0;
-    }
-
-    #populars_title{
+    
+    .fa-info + p{
         width: 90%;
-        max-width: 420px;
-        margin-bottom: 0;
     }
-
-    #lodging_populars{
-        margin: inherit;
-        width: 100%;
-        height: 36em;
-        border-radius: inherit;
-    }
-
-    .populars_card{
-        width: 90%;
-        max-width: 420px;
-        margin-bottom: 0.8em;
-    }
-                    /*Lodging_Marseille*/
+                          /*Lodging_Marseille*/
     #lodging_marseille{
         justify-content: center;
         margin: 0 0.5em 0 0.5em ;
@@ -594,7 +566,38 @@ footer section{
         max-width: 420px;
         margin: 1em 0 0 0;
     }
-                    /*Marseille_Activities*/
+
+                             /*The_most_populars*/
+    #container{
+        flex-direction: column-reverse;
+    }
+
+    h2{
+        margin: 1.5em 0 1em 0;
+        width: inherit;
+        padding: 0;
+    }
+
+    #populars_title{
+        width: 90%;
+        max-width: 420px;
+        margin-bottom: 0;
+    }
+
+    #lodging_populars{
+        margin: inherit;
+        width: 100%;
+        height: 36em;
+        border-radius: inherit;
+    }
+
+    .populars_card{
+        width: 90%;
+        max-width: 420px;
+        margin-bottom: 0.8em;
+    }
+    
+                            /*Marseille_Activities*/
     #activities_container{
         align-content: inherit;
         justify-content: space-between;
@@ -624,7 +627,7 @@ footer section{
         width: 100%;
         height: 8em!important;
     }
-                    /*FOOTER*/
+                               /*FOOTER*/
    
     footer{
         height: inherit;
@@ -648,12 +651,156 @@ footer section{
 
 @media all and (min-width: 600px) and (max-width: 1023px) {
         
+
+    #comment, nav, #search{
+        width: inherit;
+    }
+
     header{
-        width: 70%;
+        width: 95%;
         justify-content: space-between;
     }
+
     #logo{
-        margin-right: 10%;
+        margin-right: 25%;
+    }
+
+    
+
+    #search_container{
+        width: 95%;
+    }
+
+    #filters_bar{
+        flex-wrap: wrap;
+        margin-right: inherit;
+    }
+
+    #filters_p{
+        margin: 1.8em 0 0 0;
+    }
+
+    .filters_button{
+        margin: 1em 0.5em 0 0;
+    }
+
+    #container{
+        width: 95%;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+                             /*Lodging_marseille*/
+    #lodging_marseille{
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        padding: inherit;
+    }
+
+    #lodging_marseille h2{
+        margin-left: 1.8em;
+    }
+
+    a + p{
+        width: 90%;
+    }
+
+                              /*Lodging_populars*/
+    #lodging_populars{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 35%;
+        border-radius: 1.5em;
+        background-color: #f2f2f2;
+        padding: inherit;
+        margin: inherit;
     }
     
+    #populars_title{
+        width: 91%;
+        margin: inherit;
+    }
+
+    .populars_card{
+        box-shadow: 0.1em 0.1em 0.8em lightgrey;
+        border-radius: 1.5em;
+        background-color: white;
+        width: 17.5em;
+        height: 14em;
+        font-size: 0.88em;
+        text-decoration: none;
+        color: black;
+    }
+
+    .card{
+        display: inherit;
+        margin: 0;
+        width: 17.5em;
+        height: 14em;
+    }
+
+    .lodging_populars_img{
+        border-radius: 1.2em 1.2em 0em 0em;
+        margin: inherit;
+        width: 96%;
+        height: 50%;
+    }
+
+    .populars_info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+        padding: 0 0 1em 0;
+    }
+
+    .populars_stars{
+        display: flex;
+        margin-top: 0.2em;
+        font-size: inherit;
+    }              
+
+                        /*Marseille_activities*/
+
+    #activities_container{
+        width: 95%;
+    }
+
+    .dual_card{
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .dual{
+        border-radius: 1.5em;
+        height: 27.5em;
+        width: 19em;
+        box-shadow: 0.2em 0.2em 0.8em lightgrey;
+        text-decoration: none;
+        color: black;
+    }
+
+    .dual_img{
+        height: 24em!important;
+        width: 19em;
+        border-radius: 1.5em 1.5em 0 0;
+        object-fit: cover;
+    }
+
+                                /*FOOTER*/
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+
+    footer section{
+        width: 90%;
+    }
+    .footer_list{
+        padding: 5%;
+    }
 }
