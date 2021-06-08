@@ -185,8 +185,7 @@ button{
     display: flex;
     margin-bottom: 1.5em;
 }
-                            /*Lodging*/
- 
+                            /*Lodging*/ 
 #lodging_title{
     margin-bottom: 0;
 }                      
@@ -227,7 +226,8 @@ figure{
 .lodging_marseille_img{
     height: 8em;
     width: 16.8em;
-    border: 5px solid white;
+    margin: 2%;
+
     border-radius: 1.2em 1.2em 0em 0em;
     object-fit: cover;
 
@@ -840,5 +840,126 @@ footer section{
     }
     .footer_list{
         padding: 4%;
+    }
+}
+
+@media all and (min-width: 851px) and (max-width: 1100px){
+    
+    #block_page{
+        width: 100%;
+    }
+
+    header{
+        width: 95%
+    }
+
+    #logo{
+        margin-right: 40%;
+    }
+
+    #search_container{
+        width: 95%;
+    }
+
+    #search{
+        width: 100%;
+    }
+
+    #filters_bar{
+        font-size: 0.95em;
+    }
+
+    #container{
+        width: 95%;
+        height: 100%;
+    }
+                        /*Lodging_marseille*/
+    #lodging_marseille h2{
+        margin: 0 0 0.5em 0;
+    }
+
+    #lodging_marseille{
+        width: 60%;
+        height: 45em;
+        padding: 2%;
+    }
+    
+    .lodging_card{
+        width: 48.8%;
+        height: 15em;
+        margin-bottom: 0.5em;
+    }
+    .lodging_marseille_img{
+        width: 96%;
+    }
+
+    a + p{
+        margin: 0;
+    }
+                            /*Populars*/
+
+    #lodging_populars{
+        flex-wrap: wrap;
+        width: 33%;
+        height: 46em;
+        padding: 1%;
+        align-content: inherit;
+        margin-left: 2%;
+    }
+
+    #lodging_populars h2{
+        margin-top: 5%;
+    }
+
+    #populars_title{
+        width: 95%;
+        height: 4.5%;
+        margin-bottom: 6%;
+    }
+
+    .fa-chart-line{
+        display: none ;
+    }
+
+    .populars_card{
+        width: 90%;
+        height: 28.5%;
+        margin: 0 0 3% 0;
+    }
+
+    .card{
+        display: inherit;
+    }
+
+    .lodging_populars_img{
+        width: 96%;
+        height: 7em;
+        margin: inherit;
+        border-radius: 1.2em 1.2em 0 0;
+    }
+    
+    .populars_info{
+        padding: 0.1%;
+        margin-left: 1em;
+
+    }
+    
+    .populars_stars{
+       margin: 0 0 0 0;
+    }
+
+
+    footer{
+        width: 100%;
+    }
+
+    .footer_list{
+        padding:0 0 0 0;
+    }
+
+                            /*Marseille_activities*/
+
+    #activities_container{
+        width: 100%;
     }
 }
