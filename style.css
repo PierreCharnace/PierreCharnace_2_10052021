@@ -982,19 +982,17 @@ footer section{
     .dual_img, .dual_up_first, #dual_bottom_first, #dual_up_second, #dual_bottom_second{
         height: 170px;
     }
-    
                                 /*FOOTER*/
-
     .footer_list{
         width: 31.5%;
     }
 }
-    @media  screen and (min-width: 2000px){
+@media screen and (min-width: 2000px){
 
     body{
         font-size: 1.6em;
     }
-                            /*HEADER*/
+                                /*HEADER*/
     header{
         width: 80.5%;
         justify-content: space-between;
@@ -1069,7 +1067,6 @@ footer section{
     }
 
                         /*Marseille_activities*/
-
     .simple_card, .dual_card{
         width: 23%;
     }
@@ -1083,5 +1080,3 @@ footer section{
         padding: 0 13.1% 0 0;
     }
 }
-
-
