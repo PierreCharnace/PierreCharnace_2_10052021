@@ -915,7 +915,8 @@ footer section{
     }
 
     .fa-chart-line{
-        display: none ;
+        display: none!important;
+
     }
 
     .populars_card{
