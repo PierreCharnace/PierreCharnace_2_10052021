@@ -16,7 +16,7 @@ header{
 
 #logo{
     margin-right: 790px;
-    padding: 2.8em 0 1em 0;
+    padding: 2em 0 1em 0;
 }
                      /*NAV*/
 nav{
@@ -436,7 +436,7 @@ footer section{
 
     #logo{
         width: 25%;
-        height: 5em;
+        height: 3em;
         margin: 0 26% 0 1.3em;
         padding: 2em 0 0 0;
     }
@@ -989,27 +989,99 @@ footer section{
         width: 31.5%;
     }
 }
-    @media  screen and (min-width: 1440px){
+    @media  screen and (min-width: 2000px){
 
-    #block_pages{
-        width: 95%;
-        font-size: em;
+    body{
+        font-size: 1.6em;
     }
-
+                            /*HEADER*/
     header{
+        width: 80.5%;
         justify-content: space-between;
-        width: 85%;
-        font-size: 1.9em;
-    }
-
-    #logo{
-        
+        max-width: 1900px;
     }
 
     nav{
-        width: 30%;
+        max-width: 600px;
+        width: 40%;
     }
 
+    #sign_up{
+        width: 15%;
+        padding: 2.8em 2em 0 2em;
+    }
+
+    #logo{
+        height: 3.5em;
+        margin-right: inherit;
+    }
+                       
+    #search_container, #container, #activities_container{
+        width: 80.5%;
+        max-width: 1900px;
+        font-size: 0.85em;
+    }
+                            /*Lodging_marseille*/
+    #lodging_marseille{
+        width: 62%;
+        height: 900px;
+        padding: 0 2em 0 2em;
+    }
+
+    .lodging_card{
+        width: 31%;
+        height: 29%;
+    }
+    .lodging_marseille_img{
+        width: 96%;
+        height: 150px;
+    }
+                            /*Lodging_populars*/
+    #lodging_populars{
+        width: 31%;
+        height: 100%;
+    }
+
+    #populars_title{
+        width: 80%;
+        margin-bottom: 2.8em ;
+    }
+
+    .fa-chart-line{
+        padding-left: 0%;
+    }
+
+    .populars_card{
+        width: 86%;
+        height: 21%;
+    }
+
+    .lodging_populars_img{
+        height: 180px;
+    }
+
+    .populars_info{
+        width: 50%;
+    }
+
+    .populars_stars{
+        margin-top: 3em;
+    }
+
+                        /*Marseille_activities*/
+
+    .simple_card, .dual_card{
+        width: 23%;
+    }
+                        /*FOOTER*/
+    footer{
+        height: 300px;
+        justify-content: center;
+    }
+
+    .footer_list{
+        padding: 0 13.1% 0 0;
+    }
 }
 
 

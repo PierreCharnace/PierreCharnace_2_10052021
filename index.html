@@ -13,19 +13,18 @@
 
     <body>
         <div id="block_page">
-                <header>                             <!--Header-->
-                    <div id="logo">
-                        <img src="images/reservia.svg" alt="reservia" title="logo"/>
-                    </div>
+            <header>                             <!--Header-->
+
+                    <img src="images/reservia.svg" alt="reservia" title="logo" id="logo"/>
                                                 <!--NAV-->
-                    <nav>
-                        <div id="nav_bar">
-                            <a href="#lodging" class="sub_nav_bar">Hébergements</a>
-                            <a href="#activities_container" class="sub_nav_bar">Activités</a>
-                        </div>
-                            <a id="sign_up"> S'inscrire</a>
-                    </nav>
-                </header>
+                <nav>
+                    <div id="nav_bar">
+                        <a href="#lodging" class="sub_nav_bar">Hébergements</a>
+                        <a href="#activities_container" class="sub_nav_bar">Activités</a>
+                    </div>
+                    <a id="sign_up"> S'inscrire</a>
+                </nav>
+            </header>
             <section id="search_container">        
                 <div id="search">
                     <div id="comment">          <!--Search_bar-->
@@ -37,8 +36,7 @@
                         <input type="text" name="recherche" placeholder="Marseille, France" />
                         <button>
                             <i class="fas fa-search"></i>
-                            <div id="button_text">Rechercher</div>
-                            
+                            <span id="button_text">Rechercher</span>              
                         </button>
                     </form>
                 </div>
@@ -226,33 +224,33 @@
             </section>
                                                       <!--Marseille actvities-->
             <section id="activities_container">
-                        <h2 id="title_activities">Activités à Marseille</h2>
-                        <a href="#" class="simple_card"> 
+                <h2 id="title_activities">Activités à Marseille</h2>
+                <a href="#" class="simple_card"> 
+                    <figure>
+                        <img src="images/vieux_port.jpg" alt="Vieux port" class="simple_img"/>
+                        <figcaption class="activities_info">
+                            <p>Vieux Port</p>   
+                        </figcaption>
+                    </figure>
+                </a>
+                    <div class="dual_card">
+                        <a href="#" class="dual">
                             <figure>
-                                <img src="images/vieux_port.jpg" alt="Vieux port" class="simple_img"/>
+                                <img src="images/fort_pomegues.jpg" alt="Fort de Pomègues" class="dual_img" id="dual_up_first">
                                 <figcaption class="activities_info">
-                                    <p>Vieux Port</p>   
+                                    <p>Fort de Pomègue</p>
                                 </figcaption>
                             </figure>
                         </a>
-                        <div class="dual_card">
-                            <a href="#" class="dual">
-                                <figure>
-                                    <img src="images/fort_pomegues.jpg" alt="Fort de Pomègues" class="dual_img" id="dual_up_first">
-                                    <figcaption class="activities_info">
-                                        <p>Fort de Pomègue</p>
-                                    </figcaption>
-                               </figure>
-                            </a>
-                            <a href="#" class="dual">    
-                                <figure>
-                                    <img src="images/frioul.jpg" alt="Île du Frioul" class="dual_img" id="dual_bottom_first"/>
-                                    <figcaption class="activities_info">
-                                        <p>Île du Frioul</p>   
-                                    </figcaption>
-                                </figure>
-                            </a>    
-                        </div>
+                        <a href="#" class="dual">    
+                            <figure>
+                                <img src="images/frioul.jpg" alt="Île du Frioul" class="dual_img" id="dual_bottom_first"/>
+                                <figcaption class="activities_info">
+                                    <p>Île du Frioul</p>   
+                                </figcaption>
+                            </figure>
+                        </a>    
+                    </div>
                         <a href="#" class="simple_card">    
                             <figure>
                                 <img src="images/parc_calanques.jpg" alt="Parc national des Calanques" class="simple_img"/>
@@ -261,24 +259,24 @@
                                 </figcaption>
                             </figure>
                         </a>
-                        <div class="dual_card">
-                            <a href="#" class="dual">
-                                <figure>
-                                    <img src="images/notredamedelagarde.jpg" alt="Notre-Dame-de-la-Garde" class="dual_img" id="dual_up_second">
-                                    <figcaption class="activities_info">
-                                        <p>Notre-Dame-de-la-Garde</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                            <a href="#" class="dual">
-                                <figure>
-                                    <img src="images/parc_longchamp.jpg" alt="Parc Longchamp" class="dual_img" id="dual_bottom_second">
-                                    <figcaption class="activities_info">
-                                        <p>Parc Longchamp</p>
-                                    </figcaption>
-                                </figure>
-                            </a>    
-                        </div>
+                    <div class="dual_card">
+                        <a href="#" class="dual">
+                            <figure>
+                                <img src="images/notredamedelagarde.jpg" alt="Notre-Dame-de-la-Garde" class="dual_img" id="dual_up_second">
+                                <figcaption class="activities_info">
+                                    <p>Notre-Dame-de-la-Garde</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="dual">
+                            <figure>
+                                <img src="images/parc_longchamp.jpg" alt="Parc Longchamp" class="dual_img" id="dual_bottom_second">
+                                <figcaption class="activities_info">
+                                    <p>Parc Longchamp</p>
+                                </figcaption>
+                            </figure>
+                        </a>    
+                    </div>
             </section>
         </div>        
         <footer>                     <!--Footer-->
