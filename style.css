@@ -1011,8 +1011,9 @@ footer section{
     }
 
     #logo{
+        width: 10%;
         height: 3.5em;
-        margin-right: inherit;
+        margin: 1em 0 0 0;
     }
                        
     #search_container, #container, #activities_container{
