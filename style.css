@@ -287,12 +287,14 @@ a + p{
 
 #populars_title{
     display: flex;
+    justify-content: space-around;
+    width: 75%;
     margin-bottom: 2em;
 }
 
 h2 + i{
     font-size: 1.4em;
-    padding: 2em 0 0 4.5em;
+    padding: 2em 0 0 4.5rem; 
 }
 
 .populars_card{
@@ -442,8 +444,9 @@ footer section{
     }
 
     nav{
-        flex-wrap: wrap-reverse ;
+        flex-wrap: wrap-reverse;
         justify-content: flex-end;
+        align-content: center;
         width: 43.8%;
     }
 
@@ -916,7 +919,6 @@ footer section{
 
     .fa-chart-line{
         display: none!important;
-
     }
 
     .populars_card{
