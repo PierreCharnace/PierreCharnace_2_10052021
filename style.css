@@ -446,7 +446,6 @@ footer section{
     nav{
         flex-wrap: wrap-reverse;
         justify-content: flex-end;
-        align-content: center;
         width: 43.8%;
     }
 
